@@ -4,6 +4,7 @@ import "./globals.css";
 export const metadata = {
   title: "Printmn",
   description: "Printmn - Хэрэглэгчийн сонгосон зургийг хэвлэх",
+  icons: "bat.png",
 };
 
 export default function RootLayout({ children }) {
