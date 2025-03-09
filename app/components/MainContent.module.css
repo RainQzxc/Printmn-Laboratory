@@ -1,0 +1,82 @@
+.mainContent {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .contentTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .imageContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .totalSection {
+    background-color: white;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    position: sticky;
+    bottom: 20px;
+  }
+  
+  .totalDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .totalLabel {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+  }
+  
+  .totalPrice {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #212529;
+  }
+  
+  .payButton {
+    padding: 14px 30px;
+    background: linear-gradient(135deg, #06d6a0, #04aa6d);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .payButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(6, 214, 160, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .imageContainer {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 15px;
+    }
+  }
