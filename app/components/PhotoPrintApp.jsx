@@ -1,5 +1,5 @@
 'use client';
-
+import { useEffect } from 'react';
 import { useState } from 'react';
 import Header from './Header';
 import Sidebar from './Sidebar';
@@ -83,7 +83,7 @@ export default function PhotoPrintApp() {
   };
 
   // Update total price whenever images change
-  useState(() => {
+  useEffect(() => {
     updateTotalPrice();
   }, [images]);
 
