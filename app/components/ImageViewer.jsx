@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import styles from './ImageViewer.module.css';
 
 export default function ImageViewer({ image, onClose }) {
-  // Close on escape key
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape') {

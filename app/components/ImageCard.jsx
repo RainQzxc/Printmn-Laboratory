@@ -11,7 +11,7 @@ export default function ImageCard({ image, onDelete, onQuantityChange, onExpand 
           onClick={onExpand}
           title="Зургийг томруулах"
         >
-          ⤢
+          ⛶
         </button>
         <button 
           className={`${styles.cardButton} ${styles.deleteButton}`}
@@ -28,10 +28,7 @@ export default function ImageCard({ image, onDelete, onQuantityChange, onExpand 
           <span className={styles.sizeBadge}>{image.size} см</span>
         </div>
         
-        <div className={styles.imageSize}>
-          <span>Нэгж үнэ:</span>
-          <span className={styles.priceTag}>{image.price.toLocaleString()}₮</span>
-        </div>
+   
         
         <div className={styles.quantityControl}>
           <button 

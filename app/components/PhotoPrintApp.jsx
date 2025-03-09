@@ -16,11 +16,11 @@ export default function PhotoPrintApp() {
   const [expandedImage, setExpandedImage] = useState(null);
 
   const prices = {
-    '6x9': 1500,
-    '9x12': 2000,
-    '10x15': 2500,
-    '15x20': 3500,
-    '20x30': 5000
+    '6x9': 500,
+    '9x12': 500,
+    '10x15': 500,
+    '15x20': 1200,
+    '20x30': 3500
   };
 
   const handleSizeSelect = (size) => {
